@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>《装甲战争》</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="《装甲战争》">
+<meta name="description" content="《装甲战争》">
+<meta name="full-screen" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="format-detection" content="address=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<link rel="icon" href="http://zjzz.kongzhong.com/20170112/images/main_favicon.ico" type="image/x-icon">
+<link rel="bookmark" href="http://zjzz.kongzhong.com/20170112/images/main_favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="http://zjzz.kongzhong.com/20170112/images/main_favicon.ico" type="image/x-icon">
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/rem.js"></script>
+<link type="text/css" rel="stylesheet" href="css/com.css">
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+<style type="text/css">
+	html, body{
+	    height: 100%;
+	    color: #fff;
+	    font-size: 0.28rem;
+	}
+	.swiper-container{
+	    width: 100%;
+	    height: 100%;
+	}
+	.swiper-container-scrollbar .swiper-slide{
+	    height: auto;
+	    overflow-y: auto;
+	}
+	.test p{font-size: 0.5rem;height: 2rem;}
+</style>
+</head>
+
+<body>
+<!--[if lte IE 8]>
+<body class="ite">
+<p class="chromeframe">亲，浏览器版本过低，换一个吧！<a href="http://windows.microsoft.com/" target="_blank">升级您的IE浏览器</a>，或使用<a href="http://www.google.cn/intl/zh-CN/chrome/" target="_blank">Google Chrome</a>、<a href="http://www.firefox.com.cn/download/" target="_blank">Firefox</a>等高级浏览器。</p>
+<![endif]-->
+<div class="swiper-container swiper-container-v">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">Vertical Slide 1</div>
+        <div class="swiper-slide">
+            <div class="swiper-container swiper-container-scrollbar">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide test">
+                        <h3>title</h3>
+                        <p>this is a p tag</p>
+                        <p>this is a p tag</p>
+
+                        <p>this is a p tag</p>
+
+                        <p>this is a p tag</p>
+
+                        <p>this is a p tag</p>
+
+                        <p>this is a p tag</p>
+
+                        <p>this is a p tag</p>
+
+                        <p>this is a p tag</p>
+
+                        .....
+                        .....
+                        .....
+                    </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+        <div class="swiper-slide">Vertical Slide 3</div>
+        <div class="swiper-slide">Vertical Slide 4</div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/style.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<!-- <script type="text/javascript" src="js/swiper.animate1.0.2.min.js"></script> -->
+<!-- <script type="text/javascript" src="js/index.js"></script> -->
+<script type="text/javascript">
+/*!function(){
+		    var a = function() {
+		        setTimeout(function() {
+		            var a = window.innerHeight + "px";
+		            console && console.log(a),
+		            document.documentElement.style.height = a;
+		            var b = document.querySelector('.view[name="index"]');
+		            b && (b.style.height = a)
+		        },
+		        10)
+		    };
+		    document.addEventListener("DOMContentLoaded", a),
+		    window.addEventListener("resize", a),
+		    window.addEventListener("load",
+		    function() {
+		        //app.navigation.delegate(function(b) {
+		        //    "navigation:start" === b && a()
+		        //}),
+		        a()
+		    }),
+		    a()
+		}();*/
+			var swiper = new Swiper('.swiper-container', {
+				//pagination: '.swiper-pagination',
+		       // pagination: null,
+		        direction: 'vertical'
+		    });
+		    var swiperScrollbar = new Swiper('.swiper-container-scrollbar', {
+		        scrollbar: '.swiper-container-scrollbar .swiper-scrollbar',
+		        direction: 'vertical',
+		        slidesPerView: 'auto',
+		        mousewheelControl: true,
+		        freeMode: true,
+		        nested: true
+		    });
+</script>
+
+
+
+</html>
